@@ -9,6 +9,8 @@ const initWebRoute = (app) => {
 
     router.get('/detail/user/:userID', homeController.getDetailPage)
 
+    router.post('/create-new-user', homeController.createNewUser);
+
     router.get('/about', (req, res) => {
         res.send("Nguyen Quoc Bao");
     })
