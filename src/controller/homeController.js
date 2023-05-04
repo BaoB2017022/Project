@@ -22,8 +22,8 @@ let getHomepage = (req, res) => {
             });
 
         //Truyen du lieu vao view
-        //Thay doi tu kieu object ve string
-        return res.render("index.ejs", { dataUser: JSON.stringify(data) });       
+        //Thay doi tu kieu object ve string {key: value}
+        return res.render("index.ejs", { dataUser: data });       
 
     })
 
