@@ -7,6 +7,8 @@ const initWebRoute = (app) => {
 
     router.get('/', homeController.getHomepage);
 
+    router.get('/detail/user/:userID', homeController.getDetailPage)
+
     router.get('/about', (req, res) => {
         res.send("Nguyen Quoc Bao");
     })
